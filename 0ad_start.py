@@ -15,12 +15,11 @@ p = Popen([c, '-writableRoot']) # something long running
 # ... do other stuff while subprocess is running
 # p.terminate()
 
+# move the window to wanted place and size
 time.sleep(.3)  # .2 works is maybe sometimes to fast
 c = "pyrogenesis.pyrogenesis"
 window.activate(c, False, True)
 window.resize_move(c, xOrigin=1908, yOrigin=-27, width=1925, height=1089, matchClass=True)
-
-
 
 if True:
     from plyer import notification
